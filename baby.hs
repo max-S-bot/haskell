@@ -9,3 +9,11 @@ circumference r = 2 * pi * r
 
 circumference' :: Double -> Double
 circumference' r = 2 * pi * r
+
+head' :: [t] -> t
+head' [] = error "empty list"
+head' (h:_) = h
+
+firstLetter :: String -> String
+firstLetter "" = "empty string, no first letter"
+firstLetter s@(f:_) = "first letter of " ++ s ++ a" is " ++ [f]
